@@ -38,12 +38,15 @@ const StripeProvider = ({ children }: { children: React.ReactNode }) => {
   useEffect(() => {
     if (!course) return;
     const fetchPaymentIntent = async () => {
-      const result = await createStripePaymentIntent({
-        amount: course?.price ?? 9999999999999,
-      }).unwrap();
-
-      setClientSecret(result.clientSecret);
+      // try {
+        const result = await createStripePaymentIntent({
+          amount: course?.price ?? 9999999999999,
+        }).unwrap();
+    
+        console.log("Payment Intent Response:", result); // Log success
+        setClientSecret(result.clientSecret);
     };
+    
 
     fetchPaymentIntent();
   }, [createStripePaymentIntent, course?.price, course]);
