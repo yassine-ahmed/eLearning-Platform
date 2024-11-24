@@ -12,13 +12,15 @@ import {
   createClerkClient,
   requireAuth,
 } from "@clerk/express";
-/* ROUTE IMPORTS */
+
+// Route Imports
 import courseRoutes from "./routes/courseRoutes";
 import userClerkRoutes from "./routes/userClerkRoutes";
 import transactionRoutes from "./routes/transactionRoutes";
 import userCourseProgressRoutes from "./routes/userCourseProgressRoutes";
 
-/* CONFIGURATIONS */
+// Configurations
+
 dotenv.config();
 const isProduction = process.env.NODE_ENV === "production";
 if (!isProduction) {
@@ -39,7 +41,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cors());
 app.use(clerkMiddleware());
 
-/* ROUTES */
+// Routes
 app.get("/", (req, res) => {
   res.send("Hello World");
 });
@@ -49,7 +51,7 @@ app.use("/users/clerk", requireAuth(), userClerkRoutes);
 app.use("/transactions", requireAuth(), transactionRoutes);
 app.use("/users/course-progress", requireAuth(), userCourseProgressRoutes);
 
-/* SERVER */
+// Server
 const port = process.env.PORT || 3000;
 if (!isProduction) {
   app.listen(port, () => {
@@ -57,16 +59,17 @@ if (!isProduction) {
   });
 }
 
-// aws production environment
+// Add aws production environment ******
 const serverlessApp = serverless(app);
 export const handler = async (event: any, context: any) => {
   if (event.action === "seed") {
     await seed();
     return {
       statusCode: 200,
-      body: JSON.stringify({ message: "Data seeded successfully" }),
+      body: JSON.stringify({ message: "Data seeded successfully!" }),
     };
-  } else {
+  } 
+  else {
     return serverlessApp(event, context);
   }
 };
