@@ -52,7 +52,7 @@ For a visual representation of the architecture and workflows, refer to the [pro
 1. **Clone the Repository**:
 
    ```bash
-   git clone https://github.com/ed-roh/learning-management-system.git
+   git clone https://github.com/yassine-ahmed/eLearning-Platform.git
 
 2. **Navigate to the Project Directory**:
 
