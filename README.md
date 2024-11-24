@@ -1,8 +1,6 @@
+# eLearning platform (YACOD) with Clerk
 
-readme_content = """
-# Learning Management System (LMS) with Clerk
-
-This project is an enterprise-level full-stack Learning Management System (LMS) built with modern web technologies. It leverages [Clerk](https://clerk.com) for authentication and user management, providing a seamless and secure experience for users.
+This project is an enterprise-level full-stack online learning platform built with modern web technologies. It leverages [Clerk](https://clerk.com) for authentication and user management, providing a seamless and secure experience for users.
 
 ## Table of Contents
 
@@ -11,15 +9,11 @@ This project is an enterprise-level full-stack Learning Management System (LMS) 
 - [Architecture](#architecture)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgments](#acknowledgments)
 
 ## Features
 
 - **User Authentication and Management**: Implemented using Clerk for secure and efficient user handling.
 - **Course Management**: Create, update, and delete courses with rich content.
-- **Drag-and-Drop Interface**: Utilize a user-friendly interface for organizing course modules.
 - **Video Playback**: Integrate video content seamlessly within courses.
 - **File Uploads**: Support for uploading course materials and resources.
 - **Payment Processing**: Handle course payments securely using Stripe.
@@ -30,7 +24,6 @@ This project is an enterprise-level full-stack Learning Management System (LMS) 
 ### Frontend
 
 - **React**: JavaScript library for building user interfaces.
-- **Hello-Pangea Dnd**: Drag-and-drop functionality.
 - **Shadcn**: UI components and design system.
 - **React Hook Form**: Form management.
 - **Zod**: Schema validation.
@@ -60,3 +53,29 @@ For a visual representation of the architecture and workflows, refer to the [pro
 
    ```bash
    git clone https://github.com/ed-roh/learning-management-system.git
+
+2. **Navigate to the Project Directory**:
+
+   ```bash
+   cd learning-management-system
+
+3. **Install Dependencies**:
+
+   ```bash
+   npm install
+
+3. **Set Up Environment Variables**:
+Create a .env file in the root directory and add the necessary environment variables as per the .env.example file.
+
+3. **Start the Development Server**:
+
+   ```bash
+   npm run dev
+
+### Usage
+
+- **Access the Application**: Navigate to http://localhost:3000 in your browser.
+- **User Registration and Login**: Use Clerk's authentication system to register and log in.
+- **Course Management**: Create and manage courses through the dashboard.
+- **Content Upload**: Upload course materials and videos.
+- **Payment Processing**: Test payment functionalities using Stripe's test environment.
