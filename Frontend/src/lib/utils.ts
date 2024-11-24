@@ -391,7 +391,7 @@ async function uploadVideo(
 
 
 export function constructMetadata({
-  title = 'YACO - The Platform for eLearning',
+  title = 'YACO - eLearning Platform',
   description = 'YACO is an open-source marketplace for uploading courses online.',
   image = '/thumbnail.png',
   icons = '/favicon.ico',

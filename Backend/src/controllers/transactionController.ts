@@ -9,7 +9,7 @@ dotenv.config();
 
 if (!process.env.STRIPE_SECRET_KEY) {
   throw new Error(
-    "STRIPE_SECRET_KEY os required but was not found in env variables"
+    "STRIPE_SECRET_KEY is required but was not found in env variables"
   );
 }
 
@@ -117,7 +117,7 @@ export const createTransaction = async (
     );
 
     res.json({
-      message: "Purchased Course successfully",
+      message: "Purchased Course successfully!",
       data: {
         transaction: newTransaction,
         courseProgress: initialProgress,

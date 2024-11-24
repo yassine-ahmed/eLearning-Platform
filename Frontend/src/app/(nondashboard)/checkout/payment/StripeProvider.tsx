@@ -38,7 +38,6 @@ const StripeProvider = ({ children }: { children: React.ReactNode }) => {
   useEffect(() => {
     if (!course) return;
     const fetchPaymentIntent = async () => {
-      // try {
         const result = await createStripePaymentIntent({
           amount: course?.price ?? 9999999999999,
         }).unwrap();
