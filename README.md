@@ -1,3 +1,5 @@
+![Design & development](https://github.com/yassine-ahmed/yassine-ahmed/blob/main/Banner.png)
+
 # eLearning platform (YACOD) with Clerk
 
 This project is an enterprise-level full-stack online learning platform built with modern web technologies. It leverages [Clerk](https://clerk.com) for authentication and user management, providing a seamless and secure experience for users.
