@@ -24,8 +24,8 @@ if (!isProduction) {
     endpoint: "http://localhost:8000",
     region: "eu-west-3",
     credentials: {
-      accessKeyId: "dummyKey123",
-      secretAccessKey: "dummyKey123",
+      accessKeyId: "AKIAZ3JUQP55DPRWWRMU",
+      secretAccessKey: "/6Q9JzZZzJcWH2cLYjp3WjNFWXh2YzPmR2fovKF5",
     },
   });
 } else {
@@ -34,7 +34,7 @@ if (!isProduction) {
   });
 }
 
-/* DynamoDB Suppress Tag Warnings */
+
 const originalWarn = console.warn.bind(console);
 console.warn = (message, ...args) => {
   if (
