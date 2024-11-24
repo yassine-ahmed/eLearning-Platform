@@ -47,7 +47,7 @@ This project is an enterprise-level full-stack online learning platform built wi
 
 The system architecture is designed for scalability and performance. It includes a React frontend interfacing with a backend powered by AWS services. User authentication is managed by Clerk, while course data is stored in DynamoDB. Media content is served through S3 and CloudFront, ensuring efficient delivery.
 
-For a visual representation of the architecture and workflows, refer to the [project diagrams](https://miro.com/app/board/uXjVLB-4pok=/).
+For a visual representation of the architecture and workflows, refer to the [Project Diagrams](https://miro.com/app/board/uXjVLB-4pok=/).
 
 ## Installation
 
@@ -59,7 +59,7 @@ For a visual representation of the architecture and workflows, refer to the [pro
 2. **Navigate to the Project Directory**:
 
    ```bash
-   cd learning-management-system
+   cd eLearning-Platform
 
 3. **Install Dependencies**:
 
