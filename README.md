@@ -1,4 +1,4 @@
-![Design & development](https://github.com/yassine-ahmed/yassine-ahmed/blob/main/Banner.png)
+![Design & development](https://github.com/yassine-ahmed/eLearning-Platform/blob/main/Frontend/public/thumbnail.png)
 
 # eLearning platform (YACOD) with Clerk
 
